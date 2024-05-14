@@ -272,6 +272,30 @@ body {
 .usa-card__footer {
   padding: .5rem 1.5rem 1.5rem;
 }
+.primary-blue-color-bx {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+  background-color: var(--Primary-Dark-Blue);
+  border-radius: 8px;
+}
+.aqua-blue-color-bx {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+  background-color: var(--Aqua-Blue);
+  border-radius: 8px;
+}
+.sun-glow-yellow-color-bx {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+  background-color: var(--Sun-Glow-Yellow);
+  border-radius: 8px;
+}
 /*-------------
   Typography Styles
 -------------*/
