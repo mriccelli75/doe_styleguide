@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+ /* Font families. */
+--font-family-sans: "Roboto", sans-serif;
+ /* Primary Brand Colors */
+--Primary-Dark-Blue: #020079;
+--Aqua-Blue: #0074ff;
+--Sun-Glow-Yellow: #ffb000;
+--Verdant-Green: #30BF2C;
+
+ /* Scondary Brand Colors */
+--Thermal-Orange: #FF6633;
+--Energetic-Purple: #AD03DE;
+--Breezy-Blue:#93f2ff;
+--Nuclear-Blue: #085A9B;
+--Forrestal-Green: #00662c;
+
+/* Scondary Neutral Colors */
+--Soil-Brown: #5f504d;
+--Elemental-Grey: #C5CBD1;
+--Industrial-Grey:#3f474E;
+--Asphalt-Black: #000000;
+--Pure-White: #ffffff;
+}
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: #242424;
+}
+.margin-bottom-1 {
+  margin-bottom: 8px;
+}
+.margin-bottom-205 {
+  margin-bottom: 20px;
+}
+.margin-bottom-4 {
+  margin-bottom: 32px;
+}
+
+/*-------------
+  Layout Styles
+-------------*/
+
+.usa-section {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.grid-gap {
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+.grid-row.grid-gap {
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 64em) {
+  .grid-row.grid-gap {
+      margin-left: -1rem;
+      margin-right: -1rem;
+  }
+}
+.primary-h1-container {
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: var(--Primary-Dark-Blue);
+}
+.breezy-h1-container {
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: var(--Breezy-Blue);
+}
+.breezy-h1-container h1 {
+  color: var(--Primary-Dark-Blue);
+}
+.primary-h1-container h1 {
+  color: var(--Sun-Glow-Yellow);
+}
+.primary-h1-container h3 {
+  color: #fff;
+}
+.sun-glow-yellow-h1-container {
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: var(--Sun-Glow-Yellow);
+}
+.sun-glow-yellow-h1-container h1 {
+  color: var(--Asphalt-Black);
+}
+.usa-card {
+  margin-bottom: 2.5rem;
+  max-width: none;
+}
+.usa-card .usa-card__container {
+  color: #1b1b1b;
+  background-color: #fff;
+  font-family: var(--font-family-sans);
+  font-size: 1.06rem;
+  line-height: 1.5;
+  border-width: 2px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  position: relative;
+  border-radius: .25rem;
+}
+.usa-card .usa-card__header {
+  padding: 1.5rem 1.5rem .5rem;
+}
+.usa-card__heading {
+  font-family: var(--font-family-sans);
+  font-size: 1.22rem;
+  line-height: 1.2;
+  margin: 0;
+}
+.usa-card__body>:last-child, .usa-card__header>:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.usa-card__body>:first-child, .usa-card__header>:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.usa-card__body>:only-child, .usa-card__header>:only-child {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.usa-card__media {
+  order: -1;
+  min-height: 1px;
+}
+.usa-card__media--inset {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.usa-card__img {
+  border-top-left-radius: calc(.25rem - 2px);
+  border-top-right-radius: calc(.25rem - 2px);
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+.usa-card .usa-card__img {
+  display: block;
+}
+.usa-card__media--inset .usa-card__img {
+  border-radius: 0;
+}
+.usa-card__body {
+  flex: 1 1 0%;
+  padding: .5rem 1.5rem;
+  flex-basis: auto;
+}
+.usa-card__img img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.usa-card__body>:last-child, .usa-card__header>:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.usa-card__body>:first-child, .usa-card__header>:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.usa-card__body>:only-child, .usa-card__header>:only-child {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.usa-card__footer {
+  padding: .5rem 1.5rem 1.5rem;
+}
+/*-------------
+  Typography Styles
+-------------*/
+p {
+  margin-bottom: 2rem;
+}
+h1 {
+  font-size: 46px;
+  line-height: 1;
+}
+h2 {
+  font-size: 33px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-family-sans);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1;
+  
+}
+h1, h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+ 
+}
+h3 {
+  text-transform: none;
+  font-size: 26px;
+}
+h4 {
+  text-transform: none;
+  font-size: 20px;
+}
+h5 {
+  text-transform: none;
+  font-size: 18px;
+}
+.usa-list {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 1.5;
+  padding-left: 3ch;
+}
