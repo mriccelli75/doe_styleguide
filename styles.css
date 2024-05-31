@@ -138,7 +138,11 @@ img.img-fluid {
   max-width: 100%;
   height: auto;
 }
-
+.btn-container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*-------------
   Layout Styles
@@ -243,6 +247,10 @@ img.img-fluid {
 #consumer-savings .grid-row {
   box-shadow: var(--box-shadow);
 }
+#consumer-savings .grid-row > .consumer-saving-content .grid-row
+ {
+  box-shadow:none;
+}
 .consumer-saving-content {
   background-color: white;
   border-radius: 8px 0px 0px 8px;
@@ -253,6 +261,7 @@ img.img-fluid {
   -webkit-border-radius: 0px 9px 8px 0px;
   -moz-border-radius: 0px 9px 8px 0px;
 }
+
 
 /*-------------
   Typography Styles
@@ -567,9 +576,58 @@ section {
     background: white;
     border-radius: 8px;
     position: absolute;
-    bottom: -62px;
+    bottom: -25px;
     left: -1px;
     width: 408px;
     box-shadow: var(--box-shadow);
 }
+}
+
+.usa-card__img {
+  position: relative;
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--Primary-Dark-Blue);
+}
+
+.usa-card__img:hover .overlay {
+  opacity: .85;
+}
+.usa-card__img:hover .text {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  line-height: 1;
+}
+.text a {
+  font-size: .9rem;
+  color: white;
 }
