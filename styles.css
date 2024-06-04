@@ -565,7 +565,12 @@ section {
 }
 
 
-/*Join Our Team Styles*/
+/*============= 
+  JOIN OUR TEAM 
+==============*/
 #careers .max-height278 {
   max-height: 278px;
+}
+#careers .usa-card:last-child, .usa-prose .usa-card:last-child {
+  margin-bottom: .75rem;
 }
