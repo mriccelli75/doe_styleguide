@@ -33,6 +33,9 @@
 .pure-white {
   color: var(--Pure-White);
 }
+.max-height278 {
+  max-height: 278px;
+}
 * {
   padding: 0;
   margin: 0;
@@ -568,9 +571,14 @@ section {
 /*============= 
   JOIN OUR TEAM 
 ==============*/
-#careers .max-height278 {
-  max-height: 278px;
+
+@media screen and (min-width:640px) {
+  #careers .grid-container .grid-row:nth-child(3) {
+    flex-direction: row-reverse;
+  
+  }
 }
+
 #careers .usa-card:last-child, .usa-prose .usa-card:last-child {
   margin-bottom: .75rem;
 }
