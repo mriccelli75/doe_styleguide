@@ -604,4 +604,14 @@ section {
     flex-direction: row-reverse;
   }
 }
+.resource-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--Primary-Dark-Blue);
+}
+.resource-item img {
+  width: 35px;
+}
 
