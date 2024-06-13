@@ -588,9 +588,14 @@ section {
 /*============= 
   PROGRAM OFFICES
 ==============*/
+#senior-leadership .usa-card__container {
+  color: white;
+  background-color: #070F32;
+}
 #program-office-content-one h5,
 #senior-leadership h5,
-#areas-of-focus h5 {
+#areas-of-focus h5 ,
+#suboffices h5{
     color: var(--Aqua-Blue);
     text-transform: uppercase;
 }
