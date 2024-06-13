@@ -26,6 +26,7 @@
 
 /* Utility */
 --box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.15);
+
 }
 .drop-shadow {
   box-shadow: var(--box-shadow);
@@ -46,6 +47,9 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: #242424;
+}
+main {
+  padding-inline: 1rem;
 }
 .margin-bottom-1 {
   margin-bottom: 8px;
@@ -511,7 +515,7 @@ section {
     background: white;
     border-radius: 8px;
     position: absolute;
-    bottom: -25px;
+    bottom: -85px;
     left: -1px;
     width: 408px;
     box-shadow: var(--box-shadow);
@@ -575,10 +579,24 @@ section {
 @media screen and (min-width:640px) {
   #careers .grid-container .grid-row:nth-child(3) {
     flex-direction: row-reverse;
-  
   }
 }
 
 #careers .usa-card:last-child, .usa-prose .usa-card:last-child {
   margin-bottom: .75rem;
 }
+/*============= 
+  PROGRAM OFFICES
+==============*/
+#program-office-content-one h5,
+#senior-leadership h5,
+#areas-of-focus h5 {
+    color: var(--Aqua-Blue);
+    text-transform: uppercase;
+}
+@media screen and (min-width:640px) {
+  #program-office-content-one .grid-row:nth-child(1) {
+    flex-direction: row-reverse;
+  }
+}
+
