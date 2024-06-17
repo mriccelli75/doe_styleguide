@@ -595,7 +595,8 @@ section {
 #program-office-content-one h5,
 #senior-leadership h5,
 #areas-of-focus h5 ,
-#suboffices h5{
+#suboffices h5,
+#contact h5{
     color: var(--Aqua-Blue);
     text-transform: uppercase;
 }
@@ -613,5 +614,11 @@ section {
 }
 .resource-item img {
   width: 35px;
+}
+
+@media (min-width: 30em) {
+  #contact .usa-form {
+    max-width: 100%
+  }
 }
 
