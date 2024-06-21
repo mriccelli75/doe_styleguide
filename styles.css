@@ -591,6 +591,7 @@ section {
 #senior-leadership .usa-card__container {
   color: white;
   background-color: #070F32;
+  border: 3px solid var(--Primary-Dark-Blue);
 }
 #program-office-content-one h5,
 #senior-leadership h5,
