@@ -696,8 +696,18 @@ section {
     max-width: 64rem;
     padding: 1rem;
     position: relative;
+    display: flex;
 }
-.event .event__text {
+.event .event__text p {
     margin-bottom: 0;
     margin-top: 0;
+}
+.event .event__text p small {
+  color: var(--Industrial-Grey);
+}
+.blog-snippet {
+  max-width: 500px;
+}
+.blog-snippet h4 {
+  margin-bottom: .5rem;
 }
