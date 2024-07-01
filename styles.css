@@ -676,14 +676,16 @@ section {
     background-color: #000;
 
 }
-
+.events .event:nth-child(odd) {
+  border-left: .5rem solid var(--Aqua-Blue);
+}
 .event {
 	background-color: #fff;
 	border-radius: 8px;
 	border-left: .5rem solid var(--Primary-Dark-Blue);
 	color: #000;
   max-width: 468px;
-  margin: 0 auto;
+  
 }
 .event .event__body {
    font-family: var(--font-family-sans);
