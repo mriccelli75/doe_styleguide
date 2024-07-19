@@ -5,7 +5,7 @@
 --font-family-sans: "Roboto", sans-serif;
  /* Primary Brand Colors */
 --Primary-Dark-Blue: #02005B;
---Aqua-Blue: #0074ff;
+--Aqua-Blue: #0048d8;
 --Sun-Glow-Yellow: #ffb000;
 --Verdant-Green: #30BF2C;
 
@@ -26,7 +26,6 @@
 
 /* Utility */
 --box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.15);
-
 
 }
 
@@ -212,16 +211,18 @@ img.img-fluid {
 /*-------------
   Typography Styles
 -------------*/
-a {
-  background-color: transparent;
-  color: var(--Primary-Dark-Blue);
-  text-decoration: underline;
-}
+
 .usa-link {
   color: var(--Aqua-Blue);
   text-transform: uppercase;
   font-weight: 500;
   text-decoration: none;
+}
+.usa-link:hover {
+  text-decoration: underline;
+}
+.usa-link:visited {
+  color: var(--Primary-Dark-Blue);
 }
 .usa-dark-background {
   background-color: var(--Primary-Dark-Blue);
@@ -657,12 +658,11 @@ section {
   top: 4rem;
   flex-direction: column;
 }
-@media screen {
-  
-}
+
 .usa-hero h4 {
   display: block;
 }
+
 .usa-hero .overlay {
     position: absolute;
     top: 0;
